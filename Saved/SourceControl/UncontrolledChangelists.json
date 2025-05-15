@@ -1,0 +1,37 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/GitHubProject/Project_L/Content/ProjectL/Maps/Map_Basic.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/Maps/SM_Dome.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL2/Meshes/SM_Dome.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/ST_Skill.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/DT_Skills.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/AM_Skill3.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/AM_Skill4.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/IA_E.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/IA_R.uasset",
+				"C:/GitHubProject/Project_L/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/BP_LGamePawn.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/ABP_LGame.uasset",
+				"C:/GitHubProject/Project_L/Content/ARPG_Unarmed/Animations_UE5/ARPG_Unarmed_Anim_UE_Attack_Combo_B2.uasset",
+				"C:/GitHubProject/Project_L/Content/ARPG_Unarmed/Animations_UE5/LGame_Skill4.uasset",
+				"C:/GitHubProject/Project_L/Content/ARPG_Unarmed/Animations_UE5/LGame_Skill3.uasset",
+				"C:/GitHubProject/Project_L/Content/ARPG_Unarmed/Animations_UE5/ARPG_Unarmed_Anim_UE_Attack_Dodge_B.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/LGame_Skill3.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/LGame_Skill4.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/LGame_Skill3.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/LGame_Skill4.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/Skill3_AnimMon1.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/LGame_Skill3_2.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/Skill3_AnimMon2.uasset",
+				"C:/GitHubProject/Project_L/Content/Map_L.umap",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/BP_PlayerController.uasset",
+				"C:/GitHubProject/Project_L/Content/ProjectL/GameMode/Player/Skill/Montagemake.uasset"
+			]
+		}
+	]
+}
