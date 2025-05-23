@@ -49,7 +49,7 @@ void AGimmicBall::BeginPlay()
 	Super::BeginPlay();
 	
 	OnActorBeginOverlap.AddDynamic(this, &AGimmicBall::BeginOverlap);
-	UKismetSystemLibrary::K2_SetTimer(this, TEXT("SpawnFailedPlane"), 4, false, false, 0, 0);
+	UKismetSystemLibrary::K2_SetTimer(this, TEXT("SpawnFailedPlane"), 25, false, false, 0, 0);
 }
 
 // Called every frame
