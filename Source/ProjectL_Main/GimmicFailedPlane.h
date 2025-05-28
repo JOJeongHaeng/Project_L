@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "GimmicFailedPlane.generated.h"
 
-class UBoxComponent;
+class USphereComponent;
 class UStaticMeshComponent;
 
 UCLASS()
@@ -18,27 +18,29 @@ public:
 	// Sets default values for this actor's properties
 	AGimmicFailedPlane();
 
-	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
-	TObjectPtr<UBoxComponent> RootBox;
+	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadWrite)
+	TObjectPtr<USphereComponent> RootBox;
 
-	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
-	TObjectPtr<UStaticMeshComponent> Floor;
+		UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadWrite)
+		TObjectPtr<UStaticMeshComponent> Floor;
 	
-	UFUNCTION()
-	void BeginOverlap(AActor* OverlappedActor, AActor* OtherActor);
+		UFUNCTION()
+		void BeginOverlap(AActor* OverlappedActor, AActor* OtherActor);
 
-	UFUNCTION()
-	void EndOverlap(AActor* OverlappedActor, AActor* OtherActor);
+		UFUNCTION()
+		void EndOverlap(AActor* OverlappedActor, AActor* OtherActor);
 
-	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
-	bool ApplyDamage =false;
+		UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
+		bool ApplyDamage =false;
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	protected:
+		// Called when the game starts or when spawned
+		virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	public:	
+		// Called every frame
+		virtual void Tick(float DeltaTime) override;
 
-};
+		float DamageTime;
+
+	};
