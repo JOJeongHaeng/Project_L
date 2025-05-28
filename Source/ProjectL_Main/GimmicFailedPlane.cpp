@@ -4,7 +4,7 @@
 #include "GimmicFailedPlane.h"
 
 #include"Components/StaticMeshComponent.h"
-#include"Components/BoxComponent.h"
+#include"Components/SphereComponent.h"
 
 
 // Sets default values
@@ -14,7 +14,7 @@ AGimmicFailedPlane::AGimmicFailedPlane()
 	PrimaryActorTick.bCanEverTick = true;
 
 	RootComponent = RootBox;
-	RootBox = CreateDefaultSubobject<UBoxComponent>(TEXT("RootBox"));
+	RootBox = CreateDefaultSubobject<USphereComponent>(TEXT("RootBox"));
 	RootBox->SetCollisionProfileName(TEXT("OverlapAll"));
 	
 	Floor =CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Floor"));
@@ -55,10 +55,13 @@ void AGimmicFailedPlane::BeginPlay()
 void AGimmicFailedPlane::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	DamageTime += DeltaTime;
 
-	if (ApplyDamage)
+	if (ApplyDamage && DamageTime>1)
 	{
-		
+		DamageTime = 0; 
+
 	}
 }
 
